@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atap Nusantara</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Poppins:wght@300;400&display=swap');
+
+    :root {
+      --hitam-fantasy: linear-gradient(180deg, #050505, #0c0f14, #101520);
+      --teks-lembut: #b8c2cc;
+      --utama: #00c896;
+      --gelap: #0a0a0a;
+      --hover: #1e1e1e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--hitam-fantasy);
+      color: var(--teks-lembut);
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: rgba(15, 15, 15, 0.9);
+      border-bottom: 1px solid #111;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    #logo-header {
+      width: 120px;
+      height: auto;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: var(--teks-lembut);
+      background: var(--gelap);
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      margin-left: 10px;
+    }
+
+    header nav a:hover {
+      background: var(--utama);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 80px 20px 50px;
+    }
+
+    .hero h1 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 2.4rem;
+      color: #00d4a3;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #a3a3a3;
+      font-size: 1.1rem;
+    }
+
+    /* RANK SECTION */
+    .rank-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .rank-section h2 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 2rem;
+      color: var(--utama);
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+
+    .rank-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .rank-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 25px;
+      transition: all 0.3s ease;
+    }
+
+    .rank-card:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-5px);
+    }
+
+    .rank-card h3 {
+      color: var(--utama);
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .rank-card p {
+      color: #999;
+      font-size: 0.95rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #050505;
+      padding: 30px;
+      text-align: center;
+      border-top: 1px solid #111;
+    }
+
+    .social {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .social img {
+      width: 32px;
+      height: 32px;
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+
+    .social img:hover {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="images/logo.png" alt="Logo Atap Nusantara" id="logo-header">
+    <nav>
+      <a href="#">Store</a>
+      <a href="#">Discord</a>
+      <a href="#">Download Map</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Atap Nusantara</h1>
+    <p>Komunitas pembuat gunung digital di Roblox & Minecraft.</p>
+  </section>
+
+  <!-- RANK SECTION -->
+  <section class="rank-section">
+    <h2>Rank Komunitas</h2>
+    <div class="rank-grid">
+      <div class="rank-card">
+        <h3>1. Pemula</h3>
+        <p>Langkah pertama menapaki puncak digital Nusantara.</p>
+      </div>
+      <div class="rank-card">
+        <h3>2. Penjaga</h3>
+        <p>Menjadi bagian dari tim yang menjaga harmoni gunung.</p>
+      </div>
+      <div class="rank-card">
+        <h3>3. Pendaki</h3>
+        <p>Mulai menaklukkan tantangan besar di dunia virtual.</p>
+      </div>
+      <div class="rank-card">
+        <h3>4. Propen</h3>
+        <p>Pendaki profesional yang membangun keindahan digital.</p>
+      </div>
+      <div class="rank-card">
+        <h3>5. Puncak</h3>
+        <p>Tingkat tertinggi, simbol pencapaian komunitas sejati.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="social">
+      <a href="https://tiktok.com/@atap.nusantara.id" target="_blank">
+        <img src="images/tiktok.png" alt="TikTok">
+      </a>
+      <a href="https://www.youtube.com/@AtapNusantaraID2" target="_blank">
+        <img src="images/youtube.png" alt="YouTube">
+      </a>
+      <a href="https://www.instagram.com/atap.nusantaraid" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+    </div>
+    <p>Business Email: atapnusantara2@gmail.com</p>
+    <p>© 2025 Atap Nusantara — Puncak Digital Indonesia</p>
+  </footer>
+
+</body>
+</html>
